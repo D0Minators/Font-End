@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <title>Example</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Do not add `link` tags unless you know what you are doing -->
-      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-      <link rel="stylesheet" type="text/css" href="assets/styles/index.scss">
+<head>
+  <title>Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Do not add `script` tags unless you know what you are doing -->
-      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
-      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
-      <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-    </head>
-    <body class="container-fluid">
-      <h1>Books In Your Library</h1>
+  <!-- Do not add `link` tags unless you know what you are doing -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="assets/styles/index.scss">
 
-      <p>Checkout a book from our library</p>
+  <!-- Do not add `script` tags unless you know what you are doing -->
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+</head>
 
-      <div id="book-list">
-      <form id="read-book">
-        <fieldset>
-          <input type="id" class="textboxclass" name="book[id]" placeholder="Book ID">
-          <input type="title" class="textboxclass" name="book[title]" placeholder="title">
-          <input type="author" class="textboxclass" name="book[author]" placeholder="author">
-          <button id="getBooksButton" class="btn btn-default">Get Books!</button>
-          <button id="clearBooksButton" class="btn btn-default">Clear Books!</button>
-        </fieldset>
-      </form>
+<body class="container-fluid">
+  <h1>Books In Your Library</h1>
+  <div class="message" id='message'></div>
+  <p>Checkout a book from our library</p>
+
+  <div id="book-list">
+    <form id="read-book">
+      <fieldset>
+        <input type="id" class="textboxclass" name="book[id]" placeholder="Book ID">
+        <input type="title" class="textboxclass" name="book[title]" placeholder="title">
+        <input type="author" class="textboxclass" name="book[author]" placeholder="author">
+        <button id="getBooksButton" class="btn btn-default">Get Books!</button>
+        <button id="clearBooksButton" class="btn btn-default">Clear Books!</button>
+      </fieldset>
+    </form>
+  </div>
+  <!--  footerwrap -->
+  <div id="footerwrap">
+    <div class="container">
+      <div class="col-lg-4">
+        <p>Create with love from team DOMInator</p>
+      </div>
     </div>
-    </body>
+  </div>
+</body>
+
 </html>
