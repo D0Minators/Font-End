@@ -12,7 +12,7 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body class="container-fluid">
-      <h1>Example</h1>
+      <h1>Books In Your Library</h1>
 
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
       eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -21,5 +21,17 @@
       velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
       est laborum.</p>
+
+      <div id="book-list">
+      <form id="read-book">
+        <fieldset>
+          <input type="id" class="textboxclass" name="book[id]" placeholder="Book ID">
+          <input type="title" class="textboxclass" name="book[title]" placeholder="title">
+          <input type="author" class="textboxclass" name="book[author]" placeholder="author">
+          <button id="getBooksButton" class="btn btn-default">Get Books!</button>
+          <button id="clearBooksButton" class="btn btn-default">Clear Books!</button>
+        </fieldset>
+      </form>
+    </div>
     </body>
 </html>
