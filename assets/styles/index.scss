@@ -1,9 +1,9 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
-body {
-  font-family: 'Khula', sans-serif;
-  background-color: black;
+.container-fluid {
+  font-family: 'Merriweather', serif;
+  background-color: grey;
   text-align: center;
   margin: auto;
   background-image: url(https://i.imgur.com/joOzOtG.jpg);
@@ -11,4 +11,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+h1{
+  font-size: 50px;
 }
